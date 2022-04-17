@@ -4,9 +4,6 @@
 #define PI          3.141516
 #include<math.h>
 
-
-
-
 GLfloat position5 = 0.0f; //car1
 GLfloat speed5 = 0.008f;
 
@@ -14,16 +11,13 @@ GLfloat position6 = 0.0f; //car2
 GLfloat speed6 = 0.007f;
 
 GLfloat position7 = 0.0f; //car3
-GLfloat speed7 = 0.009f;
+GLfloat speed7 = 0.007f;
 
 GLfloat position8 = 0.0f; //Ship
-GLfloat speed8 = 0.0015f;
+GLfloat speed8 = 0.0035f;
+
 
 void update(int value) {
-
-
-
-
 
 
   if(position5 >1.0)
@@ -412,7 +406,7 @@ int main(int argc, char** argv) {
    glutInit(&argc, argv);
    glutInitWindowSize(650, 520);
    glutInitWindowPosition(50, 50);
-   glutCreateWindow("Translation Animation");
+   glutCreateWindow("Magical City");
    glutDisplayFunc(display);
    glutTimerFunc(100, update, 0);
 
